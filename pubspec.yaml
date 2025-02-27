@@ -1,0 +1,20 @@
+name: jni_leveldb
+description: A sample command-line application.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+publish_to: none
+
+environment:
+  sdk: ^3.6.2
+
+# Add regular dependencies here.
+dependencies:
+  jnigen: ^0.14.0
+    #path: '<path to jnigen 0.14.1 or higher>'
+  jni: ^0.14.0
+    #path: '<path to jni 0.14.1 or higher>'
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.24.0
