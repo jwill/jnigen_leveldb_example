@@ -7,15 +7,8 @@ classes:
   - 'org.iq80.leveldb.Options'
   - 'org.iq80.leveldb.DBIterator'
   - 'org.iq80.leveldb.impl.Iq80DBFactory'
-  - 'org.iq80.leveldb.CompressionType'
-  - 'org.iq80.leveldb.DBComparator'
-  - 'org.iq80.leveldb.Logger'
   - 'org.iq80.leveldb.impl.SeekingIteratorAdapter'
-
-
 
 maven_downloads:
   source_deps:
-    - 'org.iq80.leveldb:leveldb-api:0.12'
-  jar_only_deps:
     - 'org.iq80.leveldb:leveldb:0.12'

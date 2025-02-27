@@ -7,7 +7,6 @@ import 'package:path/path.dart';
 const jarError = '';
 
 void main(List<String> arguments) {
-  print('Hello world: ${jni_leveldb.calculate()}!');
 
 const jarDir = './mvn_jar/';
     List<String> jars;

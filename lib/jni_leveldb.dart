@@ -3,15 +3,9 @@ import 'dart:io';
 
 import 'package:jni/jni.dart';
 import 'package:jni_leveldb/leveldb/org/iq80/leveldb/_package.dart';
-import 'package:jni_leveldb/leveldb/org/iq80/leveldb/impl/SeekingIteratorAdapter.dart';
+import 'package:jni_leveldb/leveldb/org/iq80/leveldb/impl/_package.dart';
 
-import 'leveldb/org/iq80/leveldb/impl/Iq80DBFactory.dart';
 import 'dart:convert';
-
-
-int calculate() {
-  return 6 * 7;
-}
 
 void db() {
   var options = Options();
