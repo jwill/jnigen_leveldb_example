@@ -10,10 +10,8 @@ environment:
 
 # Add regular dependencies here.
 dependencies:
-  jnigen: ^0.14.0
-    #path: '<path to jnigen 0.14.1 or higher>'
-  jni: ^0.14.0
-    #path: '<path to jni 0.14.1 or higher>'
+  jnigen: ^0.14.1
+  jni: ^0.14.1
 
 dev_dependencies:
   lints: ^5.0.0
