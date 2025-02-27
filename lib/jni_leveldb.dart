@@ -14,7 +14,8 @@ void db() {
   final fileClass = JClass.forName("java/io/File");
   final inputFile = fileClass.constructorId("(Ljava/lang/String;)V").call(fileClass, JObject.type, [file.toJString()]);
 
-  DB db = Iq80DBFactory.factory!.open(inputFile, options)!;
+  DB db = Iq80DBFactory.factory!.open(file.toJavaFile(), options)!;
+  //DB db = Iq80DBFactory.factory!.open(inputFile, options)!;
   try {
     db.put(Iq80DBFactory.bytes('Akron'.toJString()), Iq80DBFactory.bytes('Ohio'.toJString()));
     db.put(JByteArray.from(utf8.encode('Tampa')), JByteArray.from(utf8.encode('Florida')));
@@ -29,6 +30,14 @@ void db() {
 
   } finally {
     //db.close();
+  }
+}
+
+extension JFile on String{
+  JObject? toJavaFile() {
+    final fileClass = JClass.forName("java/io/File");
+    final inputFile = fileClass.constructorId("(Ljava/lang/String;)V").call(fileClass, JObject.type, [this.toJString()]);
+    return inputFile;
   }
 }
 
